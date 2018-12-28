@@ -7,6 +7,9 @@ const D5 = require('discord.js');
 const D6 = require('discord.js');
 const D7 = require('discord.js');
 const D8 = require('discord.js');
+const D9 = require('discord.js');
+const D10 = require('discord.js');
+const D11 = require('discord.js');
 //////////////////////////////////////////////////////////////////////////////////////////////////
 const p1 = new D1.Client();
 const p2 = new D2.Client();
@@ -16,6 +19,9 @@ const p5 = new D5.Client();
 const p6 = new D6.Client();
 const p7 = new D7.Client();
 const p8 = new D8.Client();
+const p9 = new D6.Client();
+const p10 = new D7.Client();
+const p11 = new D8.Client();
 //////////////////////////////////////////////////////////////////////////////////////////////////
 p1.on('message', message => {
     if(message.author.id !== '320423357709549568') return;
@@ -73,6 +79,27 @@ p8.on('message', message => {
         message.channel.send(message.content.toLowerCase().split(' ').slice(1).join(' '));
     }
 });
+p9.on('message', message => {
+    if(message.author.id !== '320423357709549568') return;
+    if(message.content.toLowerCase().split(' ')[0] == '9') {
+        if(!message.content.toLowerCase().split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
+        message.channel.send(message.content.toLowerCase().split(' ').slice(1).join(' '));
+    }
+});
+p10.on('message', message => {
+    if(message.author.id !== '320423357709549568') return;
+    if(message.content.toLowerCase().split(' ')[0] == '10') {
+        if(!message.content.toLowerCase().split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
+        message.channel.send(message.content.toLowerCase().split(' ').slice(1).join(' '));
+    }
+});
+p11.on('message', message => {
+    if(message.author.id !== '320423357709549568') return;
+    if(message.content.toLowerCase().split(' ')[0] == '11') {
+        if(!message.content.toLowerCase().split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
+        message.channel.send(message.content.toLowerCase().split(' ').slice(1).join(' '));
+    }
+});
 //////////////////////////////////////////////////////////////////////////////////////////////////
 p1.login(process.env.B1);
 p2.login(process.env.B2);
@@ -82,3 +109,6 @@ p5.login(process.env.B5);
 p6.login(process.env.B6);
 p7.login(process.env.B7);
 p8.login(process.env.B8);
+p9.login(process.env.B9);
+p10.login(process.env.B10);
+p11.login(process.env.B11);
